@@ -1,0 +1,13 @@
+com\mobile\framework\pages\BasePage$Direction.class
+com\mobile\framework\driver\DeviceDetector$Platform.class
+com\mobile\framework\utils\ScreenshotUtil.class
+com\mobile\framework\utils\Constants.class
+com\mobile\framework\driver\DriverManager$1.class
+com\mobile\framework\utils\ConfigReader.class
+com\mobile\framework\driver\DeviceDetector.class
+com\mobile\framework\pages\LoginPage.class
+com\mobile\framework\utils\DatabaseUtils.class
+com\mobile\framework\driver\DriverManager.class
+com\mobile\framework\driver\AppiumServerManager.class
+com\mobile\framework\pages\BasePage.class
+com\mobile\framework\utils\TestListener.class

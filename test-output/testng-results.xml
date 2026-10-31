@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-05T16:06:54 IST" name="Default suite" finished-at="2026-06-05T16:08:00 IST" duration-ms="65387">
+    <groups>
+    </groups>
+    <test started-at="2026-06-05T16:06:54 IST" name="Default test" finished-at="2026-06-05T16:08:00 IST" duration-ms="65387">
+      <class name="com.mobile.tests.LoginTest">
+        <test-method is-config="true" signature="startAppiumServer()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:06:41 IST" name="startAppiumServer" finished-at="2026-06-05T16:06:54 IST" duration-ms="13044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServer -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:06:54 IST" name="setUp" finished-at="2026-06-05T16:07:10 IST" duration-ms="15121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLoginAndAcceptAlert()[pri:1, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:10 IST" name="testSuccessfulLoginAndAcceptAlert" description="Verify successful login and alert acceptance" finished-at="2026-06-05T16:07:33 IST" duration-ms="23071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLoginAndAcceptAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:33 IST" name="tearDown" finished-at="2026-06-05T16:07:35 IST" duration-ms="2189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:35 IST" name="setUp" finished-at="2026-06-05T16:07:41 IST" duration-ms="6344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLoginAndVerifyAlert()[pri:2, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:41 IST" name="testInvalidLoginAndVerifyAlert" description="Verify invalid login and alert message" finished-at="2026-06-05T16:07:49 IST" duration-ms="7439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginAndVerifyAlert -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:49 IST" name="tearDown" finished-at="2026-06-05T16:07:51 IST" duration-ms="2033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:51 IST" name="setUp" finished-at="2026-06-05T16:07:57 IST" duration-ms="6285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithDBData()[pri:3, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:57 IST" name="testLoginWithDBData" description="Verify login using data retrieved from database" finished-at="2026-06-05T16:07:57 IST" duration-ms="415" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Database connection failure]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Database connection failure
+at com.mobile.framework.utils.DatabaseUtils.<init>(DatabaseUtils.java:33)
+at com.mobile.tests.LoginTest.testLoginWithDBData(LoginTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+at com.mobile.framework.utils.DatabaseUtils.<init>(DatabaseUtils.java:29)
+... 27 more
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150)
+at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+at com.mysql.cj.NativeSession.connect(NativeSession.java:121)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/sun.nio.ch.Net.connect0(Native Method)
+at java.base/sun.nio.ch.Net.connect(Net.java:589)
+at java.base/sun.nio.ch.Net.connect(Net.java:578)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:751)
+at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153)
+at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithDBData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:07:57 IST" name="tearDown" finished-at="2026-06-05T16:08:00 IST" duration-ms="2186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="stopAppiumServer()[pri:0, instance:com.mobile.tests.LoginTest@385e9564]" started-at="2026-06-05T16:08:00 IST" name="stopAppiumServer" finished-at="2026-06-05T16:08:00 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopAppiumServer -->
+      </class> <!-- com.mobile.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

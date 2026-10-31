@@ -1,0 +1,3 @@
+com\api\runners\ApiCucumberTest.class
+com\api\steps\ApiSteps.class
+com\api\tests\ApiCrudTest.class
